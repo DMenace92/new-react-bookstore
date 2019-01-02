@@ -4,13 +4,14 @@ import {Card, CardTitle, CardText} from 'reactstrap'
 
 class CartItems extends Component{
     render(){
+        console.log(this.props)
         return(
             <div>
             <Card>
-                    <CardTitle>{this.props.title}</CardTitle>
-                    <CardTitle>{this.props.author}</CardTitle>
-                    <CardTitle>${this.props.price}</CardTitle>
-                    <CardText>{this.props.description}</CardText>
+                    <CardTitle>{this.props.newBook.title}</CardTitle>
+                    <CardTitle>{this.props.newBook.author}</CardTitle>
+                    <CardTitle>${this.props.newBook.price}</CardTitle>
+                    <CardText>{this.props.newBook.description}</CardText>
                 </Card>
             </div>
         )
