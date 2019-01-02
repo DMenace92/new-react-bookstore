@@ -28,13 +28,13 @@ class App extends Component {
     })
   }
   addBook = (id) => {
-    const singleBook = this.state.books.filter(book => book.id ===id)
+    const singleBook = this.state.books.filter(book => book.id === id)
     console.log(singleBook)
     this.setState(prevState => {
       let addItem = this.state.CartItems
       for(let i = 0; i < this.state.books.length; i++){
         if(this.state.books[i].id === id){
-          addItem.push(this.state.books[i])
+          CartItems.push(this.state.books[i])
         }
       }
       return {addItem};
@@ -49,7 +49,7 @@ class App extends Component {
          />
          <Search BookSearch={this.BookSearch}/>
          <CartItems />
-         <Cart addItem={this.state.addItem} />
+         <Cart CartItems={this.state.CartItems} />
       </div>
     );
   }

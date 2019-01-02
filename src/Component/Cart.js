@@ -3,13 +3,14 @@ import CartItems from './CartItems'
 
 class Cart extends Component{
     render(){
-        const newBook = this.props.addItem.map(book=><CartItems key={book.id} newBook={book} />)
+        console.log(this.props.CartItems)
+        const newBook = this.props.CartItems.map(book=> <CartItems key={book.id} newBook={book} />)
         
         return(
             <div>
                 <h1>Book is in Cart</h1>
                 {newBook}
-                <h2>{this.props.addItem.reduce((sum,book)=>{
+                <h2>{this.props.CartItems.reduce((sum,book)=>{
                     return sum + book.price
                     },0)}</h2>
             </div>

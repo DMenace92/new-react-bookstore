@@ -16,7 +16,7 @@ class Books extends Component{
                                 <CardTitle>{book.author}</CardTitle>
                                 <CardTitle>${book.price}</CardTitle>
                                 <CardText>{book.description}</CardText>
-                                <Button onClick={() => this.props.addBookToCart(book.id)} color="secondary">Add To Cart</Button>
+                                <Button onClick={() => this.props(book.id)}>Add To Cart</Button>
                             </Card>
                         </div>
                         )}
