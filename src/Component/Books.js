@@ -2,16 +2,14 @@ import React, { Component } from 'react';
 import { Card, Button, CardTitle, CardText } from 'reactstrap'
 import "../App.css"
 
-
-
 class Books extends Component{
-    render(){
-        return(
+    render(){     
+        return(          
             <div className='bookContainer'>
-                <div className="text">
+                <div className="text">               
             {this.props.books.map(book =>
                     <div className='cards'>
-                            <Card key={book.id} value={book.id} body inverse color="white">
+                            <Card key={book.id} value={book.id} >
                                 <CardTitle>{book.title}</CardTitle>
                                 <CardTitle>{book.author}</CardTitle>
                                 <CardTitle>${book.price}</CardTitle>
@@ -21,8 +19,6 @@ class Books extends Component{
                         </div>
                         )}
                     </div>
-
-                
          </div>
         )
     }

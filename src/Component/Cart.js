@@ -30,18 +30,18 @@ class Cart extends Component{
                      return sum + book.price
                      },0)}$ Cart</Button>
             <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-              <ModalHeader toggle={this.toggle} close={closeBtn}>Modal title</ModalHeader>
+              <ModalHeader toggle={this.toggle} close={closeBtn}></ModalHeader>
               <ModalBody>
               <div >
                  <h1>Book is in Cart</h1>
                  {newBook}
                  <h2>{this.props.CartItems.reduce((sum,book)=>{
                      return sum + book.price
-                     },0)}</h2>
+                     },0)}$</h2>
              </div>
               </ModalBody>
               <ModalFooter>
-                <Button color="primary" onClick={this.toggle}>Do Something</Button>{' '}
+                <Button color="primary" onClick={this.toggle}>Check Out</Button>{' '}
                 <Button color="secondary" onClick={this.toggle}>Cancel</Button>
               </ModalFooter>
             </Modal>

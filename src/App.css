@@ -8,7 +8,7 @@ padding:0px;
     overflow-y: scroll;
     border: 1px solid black;
     width: 20vw;
-    height:93vh
+    height:95vh
 }
 .cards{
     border: 1px solid black;
@@ -17,15 +17,14 @@ padding:0px;
 }
 .text{
         text-align: center;
-        background-color: gray;
-        color: white;
+        
+        
 }
 
 form{
     position: absolute;
     top:20vh;
     left:55vw;
-    
     width:3vw;
 }
 .App{
@@ -36,7 +35,7 @@ form{
     width:4vw;
     height:2vh;
     position: absolute;
-    top:3vh;
+    top:1.7vh;
     right:5vh;
 
 }

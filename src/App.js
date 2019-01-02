@@ -3,7 +3,7 @@ import Navbar from './Component/Navbar.js';
 import Books from './Component/Books.js';
 import Search from './Component/Search.js';
 import Cart from './Component/Cart.js';
-
+import 'reactstrap';
 import './App.css';
 
 class App extends Component {
